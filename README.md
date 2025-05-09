@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eren Keskinoğlu Personal Website
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-13.5+-000000?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-First, run the development server:
+My personal website built with Next.js and TypeScript, showcasing my projects, skills, and interactive tools.
+
+## Features
+
+- **Portfolio Showcase:** An overview of my professional experience and projects
+- **Interactive Tools:** 
+  - Killer Sudoku Helper: A utility for solving Killer Sudoku puzzles
+  - Crypto Analyzer: Cryptocurrency market analysis tool
+- **Media Corner:** My recommendations for books, movies, and games
+- **Responsive Design:** Fully optimized for all devices
+- **Dark/Light Mode:** Toggle between themes based on your preference
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **Styling:** Tailwind CSS, Framer Motion
+- **Deployment:** Vercel
+- **Form Handling:** React Hook Form
+- **State Management:** React Context API
+
+## Local Development
+
+To run this project locally, follow these steps:
 
 ```bash
+# Clone the repository
+git clone https://github.com/RaijuMounun/erenkeskinogludotcom.git
+
+# Navigate to project directory
+cd erenkeskinogludotcom
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For more detailed setup instructions, see [docs/nextjs-readme.md](docs/nextjs-readme.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to reach out to me through the contact form on my website or connect with me on [Twitter](https://twitter.com/erenkeskinoglu) or [LinkedIn](https://linkedin.com/in/erenkeskinoglu).
