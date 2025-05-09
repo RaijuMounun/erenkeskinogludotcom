@@ -73,3 +73,9 @@ logs
 # builds
 dist/
 .cache/
+
+# Cursor rules
+.cursor/rules/
+
+# Documentation
+/docs/
