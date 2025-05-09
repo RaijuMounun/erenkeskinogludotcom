@@ -1,0 +1,107 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Personal Website Project Lifecycle Rule
+
+## Rule Name: erenkeskinoglu-website-lifecycle
+Description: A comprehensive guide for developing a personal website with interactive tools like Killer Sudoku Helper and Crypto Analyzer. This lifecycle is specifically tailored for Eren Keskinoglu's personal website project.
+
+## 1. Planning & Analysis Phase
+### Requirements Gathering
+- [ ] Define site content sections (Home, About, Projects, Interactive Tools, Media Corner, Contact)
+- [ ] Detail requirements for interactive tools (Killer Sudoku Helper, Crypto Analyzer)
+- [ ] Plan how to showcase projects, books, movies, and games
+- [ ] Map out technology stack (Next.js, Tailwind CSS, React Hook Form, etc.)
+- [ ] Define site personality and voice
+- [ ] Plan mobile experience
+
+### Documentation
+- [ ] Create site map with all sections and pages
+- [ ] Document user flows (especially for interactive tools)
+- [ ] Define SEO strategy
+- [ ] Create content calendar
+
+## 2. Design Phase
+### Architecture Design
+- [ ] Design data structures for projects and media collections
+- [ ] Plan API endpoints for interactive tools
+- [ ] Create component hierarchy
+- [ ] Define state management approach
+
+### Detailed Design
+- [ ] Design main site layout and navigation
+- [ ] Create UI designs for all main sections
+- [ ] Design interactive tools interfaces
+- [ ] Create design system (colors, typography, spacing, components)
+- [ ] Design dark/light mode themes
+
+## 3. Development Phase
+### Setup
+- [ ] Configure Next.js with TypeScript
+- [ ] Set up Tailwind CSS
+- [ ] Configure project aliases and folder structure
+- [ ] Set up linting and formatting
+
+### Implementation
+- [ ] Develop core layout and navigation components
+- [ ] Implement main sections (Home, About, Projects)
+- [ ] Create dedicated "Tools" section
+- [ ] Implement Killer Sudoku Helper
+- [ ] Implement Crypto Analyzer tool
+- [ ] Develop media showcase section (books, movies, games)
+- [ ] Implement contact form
+- [ ] Add animations and transitions
+- [ ] Implement SEO optimization
+
+## 4. Testing Phase
+### Test Planning
+- [ ] Create test cases for each interactive tool
+- [ ] Define responsive design test scenarios
+- [ ] Plan performance testing
+
+### Test Execution
+- [ ] Test all sections on mobile, tablet, desktop
+- [ ] Verify interactive tools functionality
+- [ ] Test dark/light mode switching
+- [ ] Test form submission
+- [ ] Verify SEO elements
+- [ ] Run performance tests (Lighthouse)
+- [ ] Check accessibility compliance
+
+## 5. Deployment Phase
+### Preparation
+- [ ] Set up domain (erenkeskinoglu.com)
+- [ ] Configure hosting on Vercel
+- [ ] Set up analytics
+
+### Deployment
+- [ ] Deploy to staging environment
+- [ ] Conduct final tests on staging
+- [ ] Deploy to production
+- [ ] Verify live site functionality
+- [ ] Submit sitemap to search engines
+
+## 6. Maintenance & Enhancement
+### Ongoing Maintenance
+- [ ] Regular content updates
+- [ ] Add new projects
+- [ ] Enhance existing interactive tools
+- [ ] Add new tools over time
+- [ ] Update media recommendations
+
+### Feedback & Iteration
+- [ ] Collect visitor feedback
+- [ ] Monitor tool usage
+- [ ] Implement improvements based on feedback
+- [ ] Iterate on design and functionality
+
+## Important Guidelines
+- Ensure tools are practically useful, not just demonstrations
+- Maintain a cohesive design language throughout
+- Optimize images and assets for performance
+- Ensure interactive tools work well on mobile
+- Keep content fresh and up-to-date
+- Balance professional showcase with personal interests
+
