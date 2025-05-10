@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface ProjectCardProps {
-  id: string;
   slug: string;
   title: string;
   description: string;
@@ -14,7 +13,6 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-  id,
   slug,
   title,
   description,

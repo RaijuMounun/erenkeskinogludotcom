@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { Providers } from './providers';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import CursorFollower from '../components/cursor/CursorFollower';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <CursorFollower size={20} delay={0.05} />
         </Providers>
       </body>
     </html>
