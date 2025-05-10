@@ -1,0 +1,77 @@
+// TODO: 
+---
+title: Killer Sudoku Helper
+description: Killer Sudoku bulmacalarını çözmenize yardımcı olacak interaktif bir araç.
+thumbnailUrl: /projects/killer-sudoku.jpg
+technologies:
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - Next.js
+category: web-development
+githubUrl: https://github.com/erenkeskinoglu/killer-sudoku-helper 
+liveUrl: https://killer-sudoku.erenkeskinoglu.com
+featured: true
+completionDate: 2023-10-15
+createdAt: 2023-08-01
+updatedAt: 2023-11-20
+---
+
+# Killer Sudoku Helper
+
+Killer Sudoku, geleneksel Sudoku bulmacalarının daha karmaşık bir versiyonudur. Bu projede, Killer Sudoku çözmeyi kolaylaştıran interaktif bir web uygulaması geliştirdim.
+
+## Proje Hakkında
+
+Killer Sudoku Helper, kullanıcıların Killer Sudoku bulmacalarını daha kolay çözmelerine yardımcı olan bir araçtır. Uygulama, standart Sudoku kurallarına ek olarak, "kafes" adı verilen hücre gruplarının toplamlarını da dikkate alarak çözüm sürecini kolaylaştırır.
+
+## Özellikler
+
+- **Önceden Tanımlanmış Bulmacalar**: Farklı zorluk seviyelerinde hazır bulmacalar
+- **Özel Bulmaca Oluşturma**: Kullanıcıların kendi bulmacalarını oluşturabilmesi (Geliştirme önceliği çok düşük)
+- **Akıllı İpuçları**: Çözüm stratejilerini öğreten ipuçları sistemi
+- **Not Alma**: Hücrelere potansiyel değerler için notlar ekleyebilme
+- **Otomatik Doğrulama**: Yapılan hamlelerin doğruluğunu kontrol etme
+- **Kafes Toplamları Hesaplama**: Belirli bir hücre grubuna girebilecek sayı kombinasyonlarını gösterme
+- **İlerleme Kaydetme**: Çözüm sürecini kaydetme ve daha sonra devam edebilme (Geliştirme önceliği düşük)
+
+## Teknik Detaylar
+
+Uygulama, React ve Next.js kullanılarak geliştirilmiştir. Arayüz tasarımında Tailwind CSS tercih edilmiştir. TypeScript ile tip güvenliği sağlanmıştır.
+
+### Algoritma
+
+Killer Sudoku çözümünde kullanılan temel algoritmalar:
+
+1. **Kafes Kombinasyonları**: Belirli bir toplama ulaşmak için kullanılabilecek benzersiz rakam kombinasyonlarını hesaplama
+2. **Kısıtlama Yayılımı**: Bir hücreye yerleştirilen değerin, ilgili satır, sütun ve kutuyu nasıl etkilediğini izleme
+3. **Olasılık Eleme**: Diğer kısıtlamalar nedeniyle bir hücreye yerleştirilemeyen değerleri eleme
+
+### Veri Yapısı
+
+Bulmaca durumu, şu veri yapılarıyla temsil edilir:
+
+```typescript
+interface KillerSudokuGame {
+  board: number[][]; // 9x9 tahta (0 = boş)
+  cages: Cage[]; // Kafes grupları
+  notes: number[][][]; // Kullanıcı notları
+}
+
+interface Cage {
+  cells: [number, number][]; // Hücre koordinatları [satır, sütun]
+  sum: number; // Toplam değer
+  color: string; // Renk kodu
+}
+```
+
+## Gelecek Planları
+
+- Daha fazla zorluk seviyesi ve bulmaca ekleme (Geliştirme önceliği Düşük)
+- Mobil uygulama versiyonu geliştirme (Geliştirme önceliği Düşük)
+- Kullanıcıların kendi bulmacalarını paylaşabilecekleri bir topluluk özelliği (Geliştirme önceliği Çok Düşük)
+- Daha gelişmiş çözüm stratejileri ve ipuçları
+
+## Öğrenilen Dersler
+
+Bu projeyi geliştirirken, karmaşık kullanıcı etkileşimleri yönetimi, algoritma optimizasyonu ve state yönetimi konularında önemli deneyimler kazandım. Özellikle, büyük ve karmaşık bir state'i yönetmek için Redux yerine Context API ve useReducer hook'unun nasıl etkili bir şekilde kullanılabileceğini öğrendim. 
