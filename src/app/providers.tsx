@@ -8,7 +8,6 @@ interface ThemeContextType {
   setTheme: (theme: 'light' | 'dark') => void;
 }
 
-// TODO: Bu default tema ise dark yapılacak.
 export const ThemeContext = React.createContext<ThemeContextType>({
   theme: 'light',
   setTheme: () => {},
