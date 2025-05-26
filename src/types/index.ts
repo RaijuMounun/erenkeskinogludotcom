@@ -34,7 +34,9 @@ export enum ArtType {
   GAME = 'game',
   PODCAST = 'podcast',
   MUSIC = 'music',
-  PAINTING = 'painting'
+  PAINTING = 'painting',
+  POEM = 'poem',
+  OTHER = 'other'
 }
 
 export interface ArtItem {
