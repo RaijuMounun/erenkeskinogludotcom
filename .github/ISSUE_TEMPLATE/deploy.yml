@@ -1,0 +1,29 @@
+name: Deploy Görevi
+description: Prod ya da staging'e deploy işleri için
+title: "[DEPLOY] "
+labels: [deploy]
+body:
+  - type: input
+    id: ortam
+    attributes:
+      label: Hedef Ortam
+      description: Örn: Staging, Production
+    validations:
+      required: true
+
+  - type: textarea
+    id: islemler
+    attributes:
+      label: Deploy Adımları
+      description: Ne, nasıl yayınlanacak?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: kontrol
+    attributes:
+      label: Kontrol Listesi
+      options:
+        - label: Versiyon notları eklendi
+        - label: Backup alındı
+        - label: Rollback planı hazır

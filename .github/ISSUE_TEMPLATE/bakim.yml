@@ -1,0 +1,17 @@
+name: Bakım & Enhance Görevi
+description: Kod iyileştirme, refactor ya da optimizasyon işleri
+title: "[ENHANCE] "
+labels: [enhance]
+body:
+  - type: input
+    id: hedef
+    attributes:
+      label: İyileştirilecek Alan
+    validations:
+      required: true
+
+  - type: textarea
+    id: icerik
+    attributes:
+      label: Açıklama
+      description: Refactor sebebi, yapılacak değişiklikler

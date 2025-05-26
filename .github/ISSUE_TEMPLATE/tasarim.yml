@@ -1,0 +1,26 @@
+name: Tasarım Görevi
+description: Teknik veya görsel tasarım ile ilgili işler için kullanılır.
+title: "[TASARIM] "
+labels: [tasarım]
+body:
+  - type: input
+    id: tasarim_turu
+    attributes:
+      label: Tasarım Türü
+      description: Mimari, UI, veri yapısı vs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: icerik
+    attributes:
+      label: Açıklama
+      description: Bu tasarım neyi kapsıyor, hangi teknolojiler kullanılacak
+    validations:
+      required: true
+
+  - type: input
+    id: output
+    attributes:
+      label: Beklenen Çıktı
+      description: Örn: UML diyagramı, wireframe, ER diagram

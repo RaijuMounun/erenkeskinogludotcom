@@ -1,0 +1,28 @@
+name: Hata Bildirimi (Bug)
+description: Yazılımda oluşan bir hatayı bildir
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Hatanın Oluşma Adımları
+      placeholder: |
+        1. Uygulama açıldı
+        2. X'e tıklandı
+        3. Y çalışmadı
+    validations:
+      required: true
+
+  - type: input
+    id: sonuc
+    attributes:
+      label: Beklenen Davranış
+    validations:
+      required: true
+
+  - type: input
+    id: sistem
+    attributes:
+      label: Sistem Bilgisi
+      placeholder: Windows 11, Python 3.11, Chrome 123

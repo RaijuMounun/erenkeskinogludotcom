@@ -1,0 +1,26 @@
+name: Test Görevi
+description: Test planı, senaryo ve sonuçlarıyla ilgili işler
+title: "[TEST] "
+labels: [test]
+body:
+  - type: textarea
+    id: kapsam
+    attributes:
+      label: Test Kapsamı
+      description: Hangi özellik/senaryo test edilecek?
+    validations:
+      required: true
+
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Test Adımları
+      description: Adım adım nasıl test edildi
+    validations:
+      required: true
+
+  - type: input
+    id: sonuc
+    attributes:
+      label: Test Sonucu
+      description: Başarılı mı? Hata varsa ne oldu?

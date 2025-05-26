@@ -1,0 +1,29 @@
+name: Geliştirme Görevi
+description: Kod yazımı ve implementasyon ile ilgili görevler
+title: "[GELIŞTİRME] "
+labels: [geliştirme]
+body:
+  - type: input
+    id: modul
+    attributes:
+      label: Hedef Modül / Sınıf
+      description: Bu görev hangi kısmı geliştiriyor?
+    validations:
+      required: true
+
+  - type: textarea
+    id: detay
+    attributes:
+      label: Görev Açıklaması
+      description: Ne geliştirilecek, ne zaman bitecek
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: testler
+    attributes:
+      label: Test Durumu
+      options:
+        - label: Unit test yazıldı
+        - label: Manuel test yapıldı
+        - label: Otomatik testlerden geçti
