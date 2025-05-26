@@ -90,7 +90,7 @@ export default function HomePage() {
           </Link>
           <Link href="/media/podcasts" className="block text-center p-4 border rounded-lg hover:bg-gray-50">
             <div className="text-4xl mb-2">🎙️</div>
-            <span>Podcast'ler</span>
+            <span>Podcast&apos;ler</span>
           </Link>
           <Link href="/media/musics" className="block text-center p-4 border rounded-lg hover:bg-gray-50">
             <div className="text-4xl mb-2">🎵</div>
