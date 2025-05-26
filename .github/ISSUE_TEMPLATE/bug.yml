@@ -1,28 +1,123 @@
-name: Hata Bildirimi (Bug)
-description: Yazılımda oluşan bir hatayı bildir
+name: 🐛 Hata Bildirimi (Bug Report)
+description: Web sitesinde karşılaştığınız bir hatayı bildir
 title: "[BUG] "
 labels: [bug]
+assignees: []
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Hatanın efektif çözümü için lütfen aşağıdaki bilgileri mümkün olduğunca detaylı doldur.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🔍 Hata Açıklaması
+      description: Karşılaştığın hatayı kısaca açıkla lütfen
+      placeholder: Örn: Dark mode'a geçiş yaparken sayfa donuyor
+    validations:
+      required: true
+
   - type: textarea
     id: steps
     attributes:
-      label: Hatanın Oluşma Adımları
+      label: 📋 Hatanın Oluşma Adımları
+      description: Hatayı tekrar oluşturmak için gereken adımları listele lütfen
       placeholder: |
-        1. Uygulama açıldı
-        2. X'e tıklandı
-        3. Y çalışmadı
+        1. Ana sayfaya git
+        2. Header'daki tema değiştirme butonuna tıkla
+        3. Sayfa donuyor ve responsive olmaktan çıkıyor
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Beklenen Davranış
+      description: Ne olmasını bekliyordunuz?
+      placeholder: Dark mode'a geçiş sorunsuz olmalı ve sayfa responsive kalmalı
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Gerçek Davranış
+      description: Gerçekte ne oldu?
+      placeholder: Sayfa dondu ve layout bozuldu
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 🌐 Tarayıcı
+      description: Hangi tarayıcıda bu hatayı yaşadınız?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - Diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: 📱 Cihaz Türü
+      description: Hangi cihaz türünde bu hatayı yaşadınız?
+      options:
+        - Bilgisayar
+        - Tablet
+        - Telefon
     validations:
       required: true
 
   - type: input
-    id: sonuc
+    id: system
     attributes:
-      label: Beklenen Davranış
+      label: 💻 Sistem Bilgisi
+      description: İşletim sistemi ve tarayıcı versiyonu
+      placeholder: "Windows 11, Chrome 120.0.6099.109"
     validations:
       required: true
 
-  - type: input
-    id: sistem
+  - type: dropdown
+    id: page
     attributes:
-      label: Sistem Bilgisi
-      placeholder: Windows 11, Python 3.11, Chrome 123
+      label: 📄 Hangi Sayfada?
+      description: Hata hangi sayfada oluştu?
+      options:
+        - Ana Sayfa (/)
+        - Hakkımda (/about)
+        - Projeler (/projects)
+        - Araçlar (/tools)
+        - Sanat Köşesi (/art)
+        - İletişim (/contact)
+        - Yazılarım (/articles)
+        - Yetenekler/Teknolojiler (/skills)
+        - Özgeçmiş (/resume)
+        - Referanslar/Tavsiyeler (/references)
+        - Gelecek planları (/future)
+        - Interaktif Araçlardan Biri (/tools)
+        - Diğer
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Ekran Görüntüleri
+      description: Varsa ekran görüntülerini veya hata mesajlarını ekleyin
+      placeholder: Ekran görüntülerini buraya sürükleyip bırakabilirsiniz
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Kontrol Listesi
+      options:
+        - label: Bu hatayı daha önce bildirmediğimi kontrol ettim
+          required: true
+        - label: Hatayı farklı tarayıcılarda test ettim
+        - label: Sayfayı yenilemeyi denedim
+        - label: Tarayıcı cache'ini temizlemeyi denedim

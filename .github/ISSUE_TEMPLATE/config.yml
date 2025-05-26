@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Genel Soru & Tartışma
+    url: https://github.com/RaijuMounun/erenkeskinogludotcom/discussions
+    about: Genel sorular, öneriler ve tartışmalar için Discussions bölümünü kullanın
+  - name: 📧 Doğrudan İletişim
+    url: https://erenkeskinoglu.com/contact
+    about: Kişisel konular için web sitesindeki iletişim formunu kullanabilirsiniz
+  - name: 🐛 Güvenlik Açığı Bildirimi
+    url: mailto:security@erenkeskinoglu.com
+    about: Güvenlik açıkları için lütfen doğrudan e-posta gönderin 

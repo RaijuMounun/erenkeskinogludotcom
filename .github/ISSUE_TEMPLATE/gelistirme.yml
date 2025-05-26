@@ -1,29 +1,124 @@
-name: Geliştirme Görevi
-description: Kod yazımı ve implementasyon ile ilgili görevler
-title: "[GELIŞTİRME] "
-labels: [geliştirme]
+name: 🚀 Geliştirme Görevi (Development Task)
+description: Kod yazımı, implementasyon ve teknik geliştirme ile ilgili görevler
+title: "[DEV] "
+labels: [development]
+assignees: []
 body:
-  - type: input
-    id: modul
+  - type: markdown
     attributes:
-      label: Hedef Modül / Sınıf
+      value: |
+        Geliştirme görevi için teşekkürler! Lütfen aşağıdaki bilgileri doldur.
+
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: 🎯 Görev Türü
+      description: Bu geliştirme görevi hangi kategoriye ait?
+      options:
+        - Yeni Bileşen Geliştirme
+        - Sayfa Geliştirme
+        - API Entegrasyonu
+        - Performans Optimizasyonu
+        - Bug Fix
+        - Refactoring
+        - Test Yazımı
+        - Dokümantasyon
+        - Diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_module
+    attributes:
+      label: 🎯 Hedef Modül/Bölüm
       description: Bu görev hangi kısmı geliştiriyor?
+      options:
+        - Components (/src/components)
+        - Pages (/src/app)
+        - Hooks (/src/lib/hooks)
+        - Utils (/src/lib/utils)
+        - API Services (/src/lib/api)
+        - Types (/src/types)
+        - Styles (CSS/Tailwind)
+        - Configuration
+        - Diğer
     validations:
       required: true
 
   - type: textarea
-    id: detay
+    id: description
     attributes:
-      label: Görev Açıklaması
-      description: Ne geliştirilecek, ne zaman bitecek
+      label: 📝 Görev Açıklaması
+      description: Ne geliştirilecek? Hangi özellikler eklenecek?
+      placeholder: |
+        Örn: Projeler sayfası için filtreleme bileşeni geliştirme
+        - Teknoloji türüne göre filtreleme
+        - Arama fonksiyonu
+        - Sıralama seçenekleri
+        - Tag'lere göre filtreleme
     validations:
       required: true
 
-  - type: checkboxes
-    id: testler
+  - type: textarea
+    id: technical_requirements
     attributes:
-      label: Test Durumu
+      label: ⚙️ Teknik Gereksinimler
+      description: Hangi teknolojiler/kütüphaneler kullanılacak?
+      placeholder: |
+        - TypeScript interfaces tanımlanacak
+        - React Hook Form kullanılacak
+        - Tailwind CSS ile styling
+        - Framer Motion animasyonları
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: ✅ Kabul Kriterleri
+      description: Bu görevin tamamlanmış sayılması için hangi kriterler karşılanmalı?
+      placeholder: |
+        - [ ] Bileşen responsive olmalı
+        - [ ] TypeScript tiplemesi yapılmalı
+        - [ ] Unit testleri yazılmalı
+        - [ ] Dokümantasyon güncellenecek
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Öncelik
+      description: Bu görevin öncelik seviyesi nedir?
       options:
-        - label: Unit test yazıldı
-        - label: Manuel test yapıldı
-        - label: Otomatik testlerden geçti
+        - Düşük
+        - Orta
+        - Yüksek
+        - Kritik
+    validations:
+      required: true
+
+  - type: input
+    id: estimated_time
+    attributes:
+      label: ⏱️ Tahmini Süre
+      description: Bu görevin tamamlanması için tahmini süre
+      placeholder: "Örn: 2-3 gün, 1 hafta"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Geliştirme Kontrol Listesi
+      options:
+        - label: TypeScript tiplemesi yapılacak
+        - label: Responsive tasarım uygulanacak
+        - label: Unit testleri yazılacak
+        - label: ESLint kurallarına uygun kod yazılacak
+        - label: Dokümantasyon güncellenecek
+        - label: Performance optimizasyonu yapılacak
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: 📝 Ek Notlar
+      description: Bu görev hakkında eklemek istediğin başka bilgiler var mı?

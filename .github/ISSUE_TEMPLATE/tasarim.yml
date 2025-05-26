@@ -1,26 +1,117 @@
-name: Tasarım Görevi
-description: Teknik veya görsel tasarım ile ilgili işler için kullanılır.
-title: "[TASARIM] "
-labels: [tasarım]
+name: 🎨 Tasarım Görevi (Design Task)
+description: UI/UX tasarımı, sistem mimarisi veya görsel tasarım ile ilgili görevler
+title: "[DESIGN] "
+labels: [tasarim]
+assignees: []
 body:
-  - type: input
-    id: tasarim_turu
+  - type: markdown
     attributes:
-      label: Tasarım Türü
-      description: Mimari, UI, veri yapısı vs.
+      value: |
+        Tasarım görevi için teşekkürler! Lütfen aşağıdaki bilgileri doldur.
+
+  - type: dropdown
+    id: design_type
+    attributes:
+      label: 🎯 Tasarım Türü
+      description: Hangi tür tasarım görevi?
+      options:
+        - UI/UX Tasarımı
+        - Sistem Mimarisi
+        - Bileşen Tasarımı
+        - Sayfa Layout'u
+        - Responsive Tasarım
+        - Animasyon/Efekt Tasarımı
+        - Logo/Branding
+        - İkon Tasarımı
+        - Diğer
     validations:
       required: true
 
   - type: textarea
-    id: icerik
+    id: description
     attributes:
-      label: Açıklama
-      description: Bu tasarım neyi kapsıyor, hangi teknolojiler kullanılacak
+      label: 📝 Tasarım Açıklaması
+      description: Bu tasarım neyi kapsıyor? Hangi bileşenler/sayfalar etkilenecek?
+      placeholder: Örn: Ana sayfa hero bölümünün yeniden tasarlanması
     validations:
       required: true
 
-  - type: input
-    id: output
+  - type: textarea
+    id: requirements
     attributes:
-      label: Beklenen Çıktı
-      description: Örn: UML diyagramı, wireframe, ER diagram
+      label: 📋 Gereksinimler
+      description: Tasarımın karşılaması gereken özellikler nelerdir?
+      placeholder: |
+        - Responsive olmalı
+        - Dark mode desteği
+        - Erişilebilirlik standartlarına uygun
+        - Modern ve minimal görünüm
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_devices
+    attributes:
+      label: 📱 Hedef Cihazlar
+      description: Bu tasarım hangi cihazlar için optimize edilecek?
+      multiple: true
+      options:
+        - Masaüstü (1920px+)
+        - Laptop (1366px-1919px)
+        - Tablet (768px-1365px)
+        - Telefon (320px-767px)
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_details
+    attributes:
+      label: ⚙️ Teknik Detaylar
+      description: Hangi teknolojiler/kütüphaneler kullanılacak?
+      placeholder: |
+        - Tailwind CSS
+        - Framer Motion (animasyonlar için)
+        - Next.js Image component
+        - TypeScript interfaces
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 📦 Beklenen Çıktılar
+      description: Bu görevin sonunda ne teslim edilecek?
+      placeholder: |
+        - Figma tasarım dosyası
+        - Component mockup'ları
+        - Responsive breakpoint'ler
+        - Renk paleti ve tipografi rehberi
+    validations:
+      required: true
+
+  - type: textarea
+    id: inspiration
+    attributes:
+      label: 💡 İlham Kaynakları
+      description: Referans alınabilecek tasarımlar veya siteler var mı?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Öncelik
+      description: Bu tasarım görevinin öncelik seviyesi nedir?
+      options:
+        - Düşük
+        - Orta
+        - Yüksek
+        - Kritik
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Kontrol Listesi
+      options:
+        - label: Mevcut tasarım sistemini inceledim
+        - label: Erişilebilirlik gereksinimlerini göz önünde bulundurdum
+        - label: Responsive tasarım prensiplerini dikkate aldım
+        - label: Brand identity'ye uygun olacağını düşünüyorum

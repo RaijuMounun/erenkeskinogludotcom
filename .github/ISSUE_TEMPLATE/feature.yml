@@ -1,18 +1,87 @@
-name: Yeni Özellik Talebi
-description: Uygulamaya eklenmesini istediğiniz bir özelliği önerin
+name: ✨ Yeni Özellik Talebi (Feature Request)
+description: Web sitesine eklenmesini istediğiniz bir özelliği önerin
 title: "[FEATURE] "
-labels: [feature]
+labels: [yeni-ozellik]
+assignees: []
 body:
-  - type: textarea
-    id: ozellik
+  - type: markdown
     attributes:
-      label: Özellik Açıklaması
-      description: Bu özellik ne işe yarar?
+      value: |
+        Yeni özellik önerin için teşekkürler! Lütfen aşağıdaki bilgileri doldurun.
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 🎯 Özellik Açıklaması
+      description: Bu özellik ne işe yarar? Nasıl çalışmalı?
+      placeholder: Örn: Projeler sayfasında filtreleme özelliği eklemek istiyorum
     validations:
       required: true
 
   - type: textarea
-    id: neden
+    id: problem
     attributes:
-      label: Neden Eklenmeli?
-      description: Hangi problemi çözüyor? Kullanıcıya ne kazandırıyor?
+      label: 🤔 Hangi Problemi Çözüyor?
+      description: Bu özellik hangi sorunu çözüyor veya hangi ihtiyacı karşılıyor?
+      placeholder: Örn: Çok fazla proje olduğunda istediğim projeyi bulmak zor oluyor
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Önerilen Çözüm
+      description: Bu özelliğin nasıl implement edilmesini öneriyorsunuz?
+      placeholder: Örn: Teknoloji türüne göre filtreleme butonları eklenebilir
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 Kategori
+      description: Bu özellik hangi kategoriye ait?
+      options:
+        - UI/UX İyileştirmesi
+        - Yeni Sayfa/Bölüm
+        - Performans İyileştirmesi
+        - Erişilebilirlik
+        - SEO İyileştirmesi
+        - Yeni Araç/Uygulama
+        - İçerik Yönetimi
+        - Animasyon/Efekt
+        - Diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Öncelik Seviyesi
+      description: Bu özelliğin öncelik seviyesi nedir?
+      options:
+        - Düşük (Nice to have)
+        - Orta (Faydalı olur)
+        - Yüksek (Önemli)
+        - Kritik (Mutlaka olmalı)
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatif Çözümler
+      description: Bu problemi çözmek için başka hangi yolları düşündün?
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📝 Ek Bilgiler
+      description: Bu özellik hakkında eklemek istediğin başka bilgiler var mı?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Kontrol Listesi
+      options:
+        - label: Benzer bir özellik talebinin daha önce yapılmadığını kontrol ettim
+          required: true
+        - label: Bu özelliğin teknik olarak uygulanabilir olduğunu düşünüyorum

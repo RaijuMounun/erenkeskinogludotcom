@@ -1,0 +1,119 @@
+name: 📝 İçerik Güncelleme (Content Update)
+description: Web sitesindeki içeriklerin güncellenmesi, yeni proje eklenmesi veya bilgi düzenlemeleri
+title: "[CONTENT] "
+labels: [content, documentation]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        İçerik güncelleme talebi için teşekkürler! Lütfen aşağıdaki bilgileri doldur.
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: 📂 İçerik Türü
+      description: Hangi tür içerik güncellenecek?
+      options:
+        - Yeni Proje Ekleme
+        - Mevcut Proje Güncelleme
+        - Hakkımda Sayfası
+        - CV/Özgeçmiş
+        - Sanat Köşesi (Kitap/Film/Oyun vs.)
+        - İletişim Bilgileri
+        - Ana Sayfa İçeriği
+        - Blog Yazısı
+        - Diğer
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 İçerik Açıklaması
+      description: Hangi içerik eklenecek veya güncellenecek?
+      placeholder: |
+        Örn: Yeni tamamladığım React projesi için proje sayfası eklenmesi
+        - Proje adı: Todo App
+        - Kullanılan teknolojiler: React, TypeScript, Tailwind
+        - GitHub linki ve demo linki mevcut
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_page
+    attributes:
+      label: 📄 Hedef Sayfa
+      description: İçerik hangi sayfada güncellenecek?
+      options:
+        - Ana Sayfa (/)
+        - Hakkımda (/about)
+        - Projeler (/projects)
+        - Araçlar (/tools)
+        - Sanat Köşesi (/art)
+        - İletişim (/contact)
+        - Blog/Yazılar
+        - Diğer
+    validations:
+      required: true
+
+  - type: textarea
+    id: content_details
+    attributes:
+      label: 📋 İçerik Detayları
+      description: Eklenecek/güncellenecek içeriğin detayları
+      placeholder: |
+        Proje için:
+        - Başlık: 
+        - Açıklama: 
+        - Teknolojiler: 
+        - GitHub URL: 
+        - Demo URL: 
+        - Görseller: 
+        
+        Diğer içerikler için uygun bilgileri ekleyin
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Öncelik
+      description: Bu içerik güncellemesinin öncelik seviyesi nedir?
+      options:
+        - Düşük
+        - Orta
+        - Yüksek
+        - Acil
+    validations:
+      required: true
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: 📸 Medya Dosyaları
+      description: Eklenecek görseller, videolar veya diğer medya dosyaları var mı?
+      placeholder: |
+        - Proje ekran görüntüleri
+        - Logo dosyaları
+        - Video demo'ları
+        - İkonlar
+        
+        Dosyaları buraya sürükleyip bırakabilir veya link verebilirsin
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Kontrol Listesi
+      options:
+        - label: İçerik Türkçe dilbilgisi kurallarına uygun
+        - label: Gerekli görseller/medya dosyaları hazır
+        - label: Linkler çalışır durumda
+        - label: SEO için uygun başlık ve açıklama mevcut
+        - label: Responsive tasarıma uygun içerik
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: 📝 Ek Notlar
+      description: Bu içerik güncellemesi hakkında eklemek istediğin başka bilgiler var mı? 
