@@ -1,4 +1,4 @@
-name: 🐛 Hata Bildirimi (Bug Report)
+name: 🐛 Hata Bildirimi
 description: Web sitesinde karşılaştığın bir hatayı bildir
 title: "[BUG] "
 labels: [bug]
@@ -14,7 +14,7 @@ body:
     attributes:
       label: 🔍 Hata Açıklaması
       description: Karşılaştığın hatayı kısaca açıkla lütfen
-      placeholder: Örn: Dark mode'a geçiş yaparken sayfa donuyor
+      placeholder: Örn - Dark mode'a geçiş yaparken sayfa donuyor
     validations:
       required: true
 
@@ -103,6 +103,8 @@ body:
         - Gelecek planları (/future)
         - Interaktif Araçlardan Biri (/tools)
         - Diğer
+    validations:
+      required: true
 
   - type: textarea
     id: screenshots

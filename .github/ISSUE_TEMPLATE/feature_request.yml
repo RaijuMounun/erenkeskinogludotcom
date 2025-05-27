@@ -1,4 +1,4 @@
-name: ✨ Yeni Özellik Talebi (Feature Request)
+name: ✨ Yeni Özellik Talebi
 description: Web sitesine eklenmesini istediğin bir özelliği öner
 title: "[FEATURE] "
 labels: [yeni-ozellik]
@@ -14,7 +14,7 @@ body:
     attributes:
       label: 🎯 Özellik Açıklaması
       description: Bu özellik ne işe yarar? Nasıl çalışmalı?
-      placeholder: Örn: Projeler sayfasında filtreleme özelliği eklemek istiyorum
+      placeholder: Örn - Projeler sayfasında filtreleme özelliği eklemek istiyorum
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
     attributes:
       label: 🤔 Hangi Problemi Çözüyor?
       description: Bu özellik hangi sorunu çözüyor veya hangi ihtiyacı karşılıyor?
-      placeholder: Örn: Çok fazla proje olduğunda istediğim projeyi bulmak zor oluyor
+      placeholder: Örn - Çok fazla proje olduğunda istediğim projeyi bulmak zor oluyor
     validations:
       required: true
 
@@ -32,7 +32,7 @@ body:
     attributes:
       label: 💡 Önerilen Çözüm
       description: Bu özelliğin nasıl implement edilmesini öneriyorsun?
-      placeholder: Örn: Teknoloji türüne göre filtreleme butonları eklenebilir
+      placeholder: Örn - Teknoloji türüne göre filtreleme butonları eklenebilir
 
   - type: dropdown
     id: category
