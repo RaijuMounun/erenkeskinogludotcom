@@ -1,5 +1,5 @@
 name: 🐛 Hata Bildirimi (Bug Report)
-description: Web sitesinde karşılaştığınız bir hatayı bildir
+description: Web sitesinde karşılaştığın bir hatayı bildir
 title: "[BUG] "
 labels: [bug]
 assignees: []
@@ -34,7 +34,7 @@ body:
     id: expected
     attributes:
       label: ✅ Beklenen Davranış
-      description: Ne olmasını bekliyordunuz?
+      description: Ne olmasını bekliyordun?
       placeholder: Dark mode'a geçiş sorunsuz olmalı ve sayfa responsive kalmalı
     validations:
       required: true
@@ -52,7 +52,7 @@ body:
     id: browser
     attributes:
       label: 🌐 Tarayıcı
-      description: Hangi tarayıcıda bu hatayı yaşadınız?
+      description: Hangi tarayıcıda bu hatayı yaşadın?
       options:
         - Chrome
         - Firefox
@@ -67,7 +67,7 @@ body:
     id: device
     attributes:
       label: 📱 Cihaz Türü
-      description: Hangi cihaz türünde bu hatayı yaşadınız?
+      description: Hangi cihaz türünde bu hatayı yaşadın?
       options:
         - Bilgisayar
         - Tablet
@@ -108,8 +108,8 @@ body:
     id: screenshots
     attributes:
       label: 📸 Ekran Görüntüleri
-      description: Varsa ekran görüntülerini veya hata mesajlarını ekleyin
-      placeholder: Ekran görüntülerini buraya sürükleyip bırakabilirsiniz
+      description: Varsa ekran görüntülerini veya hata mesajlarını ekle
+      placeholder: Ekran görüntülerini buraya sürükleyip bırakabilirsin
 
   - type: checkboxes
     id: checklist
@@ -120,4 +120,4 @@ body:
           required: true
         - label: Hatayı farklı tarayıcılarda test ettim
         - label: Sayfayı yenilemeyi denedim
-        - label: Tarayıcı cache'ini temizlemeyi denedim
+        - label: Tarayıcı cache'ini temizlemeyi denedim 

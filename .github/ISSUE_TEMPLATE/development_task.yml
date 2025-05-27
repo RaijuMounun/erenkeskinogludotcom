@@ -55,7 +55,6 @@ body:
         - Teknoloji türüne göre filtreleme
         - Arama fonksiyonu
         - Sıralama seçenekleri
-        - Tag'lere göre filtreleme
     validations:
       required: true
 
@@ -121,4 +120,4 @@ body:
     id: additional_notes
     attributes:
       label: 📝 Ek Notlar
-      description: Bu görev hakkında eklemek istediğin başka bilgiler var mı?
+      description: Bu görev hakkında eklemek istediğin başka bilgiler var mı? 

@@ -1,5 +1,5 @@
 name: ✨ Yeni Özellik Talebi (Feature Request)
-description: Web sitesine eklenmesini istediğiniz bir özelliği önerin
+description: Web sitesine eklenmesini istediğin bir özelliği öner
 title: "[FEATURE] "
 labels: [yeni-ozellik]
 assignees: []
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Yeni özellik önerin için teşekkürler! Lütfen aşağıdaki bilgileri doldurun.
+        Yeni özellik önerin için teşekkürler! Lütfen aşağıdaki bilgileri doldur.
 
   - type: textarea
     id: feature_description
@@ -31,7 +31,7 @@ body:
     id: solution
     attributes:
       label: 💡 Önerilen Çözüm
-      description: Bu özelliğin nasıl implement edilmesini öneriyorsunuz?
+      description: Bu özelliğin nasıl implement edilmesini öneriyorsun?
       placeholder: Örn: Teknoloji türüne göre filtreleme butonları eklenebilir
 
   - type: dropdown
@@ -84,4 +84,4 @@ body:
       options:
         - label: Benzer bir özellik talebinin daha önce yapılmadığını kontrol ettim
           required: true
-        - label: Bu özelliğin teknik olarak uygulanabilir olduğunu düşünüyorum
+        - label: Bu özelliğin teknik olarak uygulanabilir olduğunu düşünüyorum 
